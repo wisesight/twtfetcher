@@ -11,9 +11,7 @@ class Fetcher(object):
 
     def fetch(self, ids):
         if len(ids) > 100:
-            raise MaxIdsLimitException(
-                'Cannot fetch tweet more than 100 at a time'
-            )
+            raise MaxIdsLimitException("Cannot fetch tweet more than 100 at a time")
         response = []
         tweets = self.api.statuses_lookup(ids)
         for tweet in tweets:
@@ -24,4 +22,3 @@ class Fetcher(object):
 class MaxIdsLimitException(Exception):
     def __init__(self, message):
         super().__init__(message)
-
