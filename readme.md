@@ -29,3 +29,8 @@ $ uwsgi --ini wsgi.ini
 ```
 $ docker run -e CONSUMER_KEY={consumer_key} -e CONSUMER_SECRET={consumer_secret} -e ACCESS_TOKEN={access_token} -e ACCESS_TOKEN_SECRET={access_token_secret} -p 5000:5000 wisesight/twtfetcher
 ```
+
+### Example request
+```
+$ curl -X POST -H 'Content-Type: application/json' -d '{"ids":["example_id_1","example_id_2"]}'
+```
