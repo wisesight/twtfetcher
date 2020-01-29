@@ -7,6 +7,14 @@ $ source env/bin/activate
 $ python -m pip install -r requirements.txt
 ```
 
+### Set required environment variable
+```
+$ export CONSUMER_KEY={YOUR_CONSUMER_KEY}
+$ export CONSUMER_SECRET={YOUR_CONSUMER_SECRET}
+$ export ACCESS_TOKEN={YOUR_ACCESS_TOKEN}
+$ export ACCESS_TOKEN_SECRET={YOUR_ACCESS_TOKEN_SECRET}
+```
+
 ### Start in dev mode
 ```
 $ python api.py
