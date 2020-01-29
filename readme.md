@@ -32,5 +32,5 @@ $ docker run -e CONSUMER_KEY={consumer_key} -e CONSUMER_SECRET={consumer_secret}
 
 ### Example request
 ```
-$ curl -X POST -H 'Content-Type: application/json' -d '{"ids":["example_id_1","example_id_2"]}'
+$ curl -H 'Content-Type: application/json' -X POST 'http://localhost:5000' -d '{"ids":["example_id_1","example_id_2"]}'
 ```
